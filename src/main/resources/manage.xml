@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<!-- 
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+    <package name="manage" namespace="/manage" extends="struts-default">
+
+        <default-action-ref name="Dashboard" />
+
+        <action name="Dashboard" class="com.demo.manage.Dashboard" method="index">
+            <result>/WEB-INF/manage/dashboard.jsp</result>
+        </action>
+
+    </package>
+</struts>
